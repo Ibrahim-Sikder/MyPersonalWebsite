@@ -1,0 +1,834 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+}
+.navbar{
+    font-family:'ubuntu',sans-serif;
+    width:100%;
+    position:fixed;
+    padding:30px 0px;
+    z-index:9999;
+}
+.navbar.sticky{
+    background:crimson;
+    padding:15px 0px;
+}
+.navbar .logo a{
+    color:#fff;
+    font-size:35px;
+    font-weight:600;
+}
+.navbar ul li a{
+    display:block;
+    color:#fff;
+    font-size:18px;
+    font-weight:500;
+    margin-left:25px;
+    text-transform:capitalize;
+    transition:color .3s ease;
+
+}
+
+.navbar .menu li{
+    display:inline-block;
+    list-style:none;
+}
+.navbar .max_width{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    
+
+}
+.max_width{
+    max-width:1300px;
+    padding:0px 80px;
+    margin:auto;
+}
+.logo a span{
+    color:crimson;
+}
+/*home styling*/
+.home{
+    background:url("../image/banner.jpg");
+    color:#fff;
+    display:flex;
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100vh;
+    min-height:500px;
+    font-family:'ubuntu,sans-serif'
+
+}
+.home .max_width{
+    margin:auto 0 auto 40px;
+}
+.home .home_content .text_1{
+    font-size:27px;
+    text-transform:capitalize;
+}
+.home .home_content .text_2{
+    font-size:75px;
+    margin-left:-3px;
+    font-weight:600;
+    text-transform:capitalize;
+
+}
+.home .home_content .text_3{
+    font-size:40px;
+    margin:5px 0;
+    text-transform:capitalize;
+}
+.home .home_content span{
+    font-weight:600;
+    color:crimson;
+}
+.home_content a{
+    background:crimson;
+    color:#fff;
+    padding:12px 36px;
+    display:inline-block;
+    font-size:25px;
+    margin-top:20px;
+    border-radius:6px;
+    border:2px solid crimson;
+    transition:all  .3s ease;
+}
+.home_content a:hover{
+    background:none;
+    color:#fff;
+}
+.logo a span{
+    color:#fff
+}
+/* humbergerMenu styling */
+.humbergerMenu{
+    font-size:23px;
+    cursor:pointer;
+    color:#fff;
+    display:none;
+}
+.humbergerMenu i.showMenu:before{
+    content:"";
+    transition:all .5s ease;
+}
+/*about styling*/
+.aboutLeft img {
+    width: 400px;
+    height: 400px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+section#about {
+    padding: 100px 0px;
+}
+
+h2.title {
+    text-align: center;
+    position: relative;
+    padding-bottom: 7px;
+    margin-bottom: 50px;
+    font-size:40px;
+}
+
+h2.title:before {
+    position: absolute;
+    content: "";
+    background: #111;
+    height: 2px;
+    width: 193px;
+    bottom: -6px;
+}
+
+h2.title:after {
+    position: absolute;
+    content: "who i am";
+    background: #fff;
+    color: crimson;
+    font-size: 15px;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0 5px;
+}
+.aboutLeft {
+    width: 45%;
+}
+
+.about_content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutRight {
+    width: 50%;
+}
+
+.aboutRight h3 {
+    font-size: 29px;
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+
+.aboutRight span {
+    color: crimson;
+}
+
+.aboutRight p {
+    text-align: justify;
+}
+
+.aboutRight a {
+    background: crimson;
+    color: #fff;
+    padding: 10px 35px;
+    display: inline-block;
+    margin-top: 17px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border:2px solid crimson;
+    transition:all .3s ease;
+}
+.aboutRight a:hover{
+    background:none;
+    color:crimson;
+
+}
+
+/*services styling*/
+h2.serTittle {
+    text-align: center;
+    position: relative;
+    padding-bottom: 7px;
+    margin-bottom: 60px;
+    font-size:40px;
+}
+
+h2.serTittle:before {
+    position: absolute;
+    content: "";
+    background: crimson;
+    height: 2px;
+    width: 244px;
+    bottom: -6px;
+}
+
+h2.serTittle:after {
+    position: absolute;
+    content: "what i provide";
+    background: #111;
+    color: #fff;
+    font-size: 15px;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0 5px;
+}
+
+section.services {
+    background: #111;
+    color: #fff;
+    padding: 80px 0px;
+}
+
+.services_content {
+    display: flex;
+}
+
+.card {
+    width: calc(33% - 20px);
+    background: #222;
+    margin-right: 27px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 30px 37px;
+    transition:all .3s ease;
+
+}
+.card:hover i{
+    color:#fff;
+    
+    
+}
+
+.card:hover{
+    background:crimson;
+    transform:scale(1.05);
+    
+}
+.card .text {
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.card i {
+    color: crimson;
+    font-weight: 800;
+    font-size: 50px;
+    margin-bottom: 8px;
+}
+/*start skills styling*/
+section.skillSection {
+    padding: 80px 0px;
+}
+
+h2.title.skillTittle {
+    position: relative;
+}
+
+h2.title.skillTittle:after {
+    position: absolute;
+    content: "what i know";
+}
+h2.title.skillTittle:before {
+    position: absolute;
+    content: "";
+    width: 160px;
+}
+
+.skill_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.LeftSkill {
+    width: 45%;
+    text-align: left;
+}
+
+.LeftSkill h2 {
+    font-size: 28px;
+    margin-bottom: 7px;
+}
+
+.LeftSkill p {
+    text-align: justify;
+}
+
+.LeftSkill a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    padding: 7px 21px;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-top: 13px;
+}
+
+.RightSkill {
+    width: 45%;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line.java {
+    width: 100%;
+    height: 5px;
+    background: lightgray;
+    margin: 10px 0;
+    position:relative;
+}
+.line.java:after {content: "";
+    background: crimson;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.line.java {
+    width: 100%;
+    height: 5px;
+    background: lightgray;
+    margin: 10px 0;
+    position:relative;
+}
+.line.java:after {content: "";
+    background: crimson;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.line.java {
+    width: 100%;
+    height: 5px;
+    background: lightgray;
+    margin: 10px 0;
+    position:relative;
+}
+.line.java:after {content: "";
+    background: crimson;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.line.java {
+    width: 100%;
+    height: 5px;
+    background: lightgray;
+    margin: 10px 0;
+    position:relative;
+}
+.line.java:after {content: "";
+    background: crimson;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.line.html {
+    width: 100%;
+    height: 5px;
+    background: lightgray;
+    margin: 10px 0;
+    position:relative;
+}
+.line.html:after {content: "";
+    background: crimson;
+    width: 95%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.line.css {
+    width: 100%;
+    height: 5px;
+    background: lightgray;
+    margin: 10px 0;
+    position:relative;
+}
+.line.css:after {content: "";
+    background: crimson;
+    width: 85%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.line.bootstrap {
+    width: 100%;
+    height: 5px;
+    background: lightgray;
+    margin: 10px 0;
+    position:relative;
+}
+.line.bootstrap:after {content: "";
+    background: crimson;
+    width: 95%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.line.jquery {
+    width: 100%;
+    height: 5px;
+    background: lightgray;
+    margin: 10px 0;
+    position:relative;
+}
+.line.jquery:after {content: "";
+    background: crimson;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.line.php {
+    width: 55%;
+    height: 5px;
+    background: lightgray;
+    margin: 10px 0;
+    position:relative;
+}
+.line.php:after {content: "";
+    background: crimson;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.line.mysql {
+    width: 100%;
+    height: 5px;
+    background: lightgray;
+    margin: 10px 0;
+    position:relative;
+}
+.line.mysql:after {content: "";
+    background: crimson;
+    width: 60%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.info span {
+    color: #111;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/*team section styling*/
+.teamSectin{
+    padding:80px 0px;
+    background:#111;
+}
+h2.title:after {
+    content: "who with me";
+}
+
+h2.title.tTitle {
+    position: relative;
+}
+
+h2.title.tTitle:before {
+    position: absolute;
+    width: 182px;
+}
+
+h2.title.tTitle:after {
+    position: absolute;
+    content: "who work with me";
+}
+.carouseldBox img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 5px solid crimson;
+}
+.card:hover .carouseldBox img{
+    border:5px solid #fff !important;
+}
+.carousel {
+    display: flex;
+}
+
+.carousel.card {
+    color: white;
+}
+
+.carouseldBox p {
+    color: #fff;
+}
+
+.text {
+    color: #fff;
+    font-size: 22px !important;
+}
+.card.carouselcard {
+    width: 200px;
+    height: 400px;
+
+    text-align:center;
+    margin:auto;
+}
+
+
+.owl-dots {
+   text-align:center;
+   margin-top:20px;
+   
+}
+.owl-dot{
+    margin:0 5px;
+    width:13px;
+    height:13px;
+    outline:none;
+    border-radius:50%;
+    border:2px solid crimson;
+    transition:all .3s ease;
+   
+
+}
+
+
+button.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    background:crimson;
+}
+
+/*contact styling*/
+h2.title:after {content: "contact with me";}
+h2.title.Ctitle {
+    position: relative;
+}
+
+h2.title.Ctitle:before {
+    position: absolute;
+    width: 352px;
+}
+
+
+.row {
+    display: flex;
+    align-items: center;
+    
+}
+
+.ContactLeft {
+    width: calc(50% - 30px);
+}
+
+.ContactLeft p {
+    margin-bottom: 20px;
+}
+
+.row i {
+    color: crimson;
+    font-size: 27px;
+}
+
+.infoo {
+    margin-left:45px;
+}
+
+.head {
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.sub_title {
+    color: #111;
+    font-weight: 500;
+}
+.contact_content {
+    display: flex;
+}
+
+.contactRight {
+    width: calc(50% - 30px);
+}
+.contactJount {
+    display: flex;
+}
+
+.field_name input {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding-right: 133px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.field_email input {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding-right: 133px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.field_subject input {
+    width: 100%;
+    padding: 15px 6px;
+    border: 1px solid lightgray;
+    margin-bottom: 10px;
+}
+
+.field_textarea textarea {
+    width: 100%;
+    border: 1px solid lightgray;
+    height: 110px;
+    resize: noe;
+    resize: none;
+    border-radius: 5px;
+}
+
+.button button {
+    background: crimson;
+    color: white;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    outline: none;
+    border: 1px solid crimson;
+}
+.textM {
+    font-size: 26px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.field_name {
+    margin-bottom: 8px;
+}
+section#contact {
+    padding: 80px 0px;
+}
+
+/*footer styling*/
+footer#footer {
+    background: #111;
+    padding: 50px 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.fonter_content span {
+    color: crimson;
+    font-weight: 600;
+}
+/*scroll up btn*/
+.scroll_up_btn {
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    background: crimson;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 36px;
+    border-radius: 100%;
+    cursor:pointer;
+    opacity:0;
+    pointer-events:none;
+    transition:all .3s ease;
+    z-index:9999;
+}
+.scroll_up_btn.show{
+    opacity:1;
+    pointer-events:auto;
+    bottom:30px
+
+}
+/*portfolio styling*/
+section#portfolio {
+    background: #111111;
+    padding: 80px 0px;
+}
+.portfolio_title {
+    text-align: center;
+    margin-bottom:30px;
+}
+
+span.my {
+    color: white;
+    text-transform: uppercase;
+    font-size: 55px;
+    font-weight: 900;
+    margin-right: 13px;
+}
+
+span.port {
+    font-size: 55px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #FDB903;
+}
+
+ul.portList {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+ul.portList li a {
+    color: #fff;
+}
+
+ul.portList li {
+    color: #fff;
+    margin-right: 17px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+ul.portList li.active {
+    color: yellow;
+}
+
+.mixitUPImg img {
+    width: 100%;
+    border-radius: 6px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mixitUp {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+}
+
+.mixitUPImg {
+    width: 31%;
+    margin-right: 18px;
+    margin-bottom: 15px;
+    height: 291px;
+    position:relative;
+}
+
+.mixitUPImg:last-child {
+    margin-right: 0px;
+}
+.overly {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: yellow;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-align: center;
+    opacity:0;
+    transform-origin:top;
+    transform:scalceY(0);
+    transition:all .5s ease;
+  
+}
+.mixitUPImg:hover .overly{
+    opacity:1;
+    transform:scaleY(1);
+}
+span.overlyContent {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    padding-top: 115px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+ 
+}

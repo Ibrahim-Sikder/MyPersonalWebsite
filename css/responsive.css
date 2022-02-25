@@ -1,0 +1,240 @@
+@media only screen and (max-width:1300px){
+    .max_width{
+        margin-left:0px;
+  
+      }
+
+}
+
+
+
+
+@media only screen and (max-width:1105px){
+    .max_width{
+        margin-left:0px;
+  
+      }
+
+}
+
+@media only screen and (max-width:991px){
+    .max_width{
+        padding:0px 50px;
+  
+      }
+      .card {
+        width: calc(50% - 10px);
+        text-align:center;
+        height:300px;
+        overflow:hidden;
+        flex:100%;
+    
+    }
+    .card .text {
+        font-size: 21px;
+       
+    }
+    
+    .card i {
+        font-size: 35px;
+    }
+    .skill_content {
+        display: block;
+       
+    }
+    
+    .LeftSkill {
+        width: 100%;
+        margin-bottom:20px;
+    }
+    .RightSkill {
+        width: 100%;
+    }
+    .carouselcard{
+
+        display:block;
+    }
+    .card.carouselcard {
+        width: 250px;
+        height: 400px;
+        margin:auto;
+    }
+    .ContactLeft {
+        width: 100%;
+        margin-bottom:20px;
+    }
+    .contactRight {
+        width: 100%;
+    }
+    .contact_content {
+        display: block;
+    }
+    
+    
+    
+    
+    
+}
+
+
+@media only screen and (max-width:947px){
+  
+    .humbergerMenu{
+        display:block;
+        z-index:999;
+    }
+    .navbar .menu {
+        position: fixed;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        padding-top: 80px;
+        transition:all .3s ease;
+    }
+    .navbar .menu.showMenu{
+        left:0;
+    }
+    .navbar .menu li {
+        display: block;
+        text-align: center;
+    }
+    
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0px;
+        font-size: 25px;
+    }
+    .home .home_content .text_1{
+        font-size:27px;
+    }
+    .home .home_content .text_2{
+        font-size:70px;
+ 
+    }
+    .home .home_content .text_3{
+        font-size:35px;
+       
+    }
+    .home_content a{
+        
+        padding:10px 30px;
+        font-size:22px;
+        
+    }
+    .max_width{
+        max-width:800px;
+    }
+
+    .aboutLeft {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .about_content {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    
+    .aboutRight {
+        flex: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-top: 14px;
+    }
+    .mixitUp {
+        text-align:center;
+
+        flex-basis: 20%;
+    }
+    
+    .mixitUPImg {
+        width: 40%;
+        margin: 0 0 20px auto;
+        height: 240px;
+       
+    }
+    
+span.my {
+    font-size: 40px;
+}
+
+span.port {
+    font-size: 40px;
+}
+    
+
+}
+@media only screen and (max-width:690px){
+    .max_width{
+        padding:0 23px;
+    }
+    .home .home_content .text_2{
+        font-size:60px;
+ 
+    }
+    .home .home_content .text_3{
+        font-size:32px;
+       
+    }
+    .home_content a{
+        
+        padding:8px 23px;
+      
+        
+    }
+    .card {
+        width:100%;
+        margin-bottom:20px;
+        padding: 20px 27px;
+    
+    }
+    .services_content{
+        display:flex;
+        flex-wrap:wrap;
+        
+    }
+    footer#footer {
+        padding: 30px 20px;
+
+    }
+    
+
+}
+
+
+@media only screen and (max-width:500px){
+   
+ 
+    .home .home_content .text_2{
+        font-size:50px;
+ 
+    }
+    .home .home_content .text_3{
+        font-size:27px;
+       
+    }
+    
+    .mixitUPImg {
+        width: 100%;
+        margin: 0 0 20px auto;
+        height: 240px;
+       
+    }
+    ul.portList li {
+        font-size: 14px;
+    }
+    
+span.my {
+    font-size: 30px;
+}
+
+span.port {
+    font-size: 30px;
+}
+    
+    
+}
